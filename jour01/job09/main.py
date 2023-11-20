@@ -5,7 +5,7 @@ quantite_stock = 10
 print(f"Produit: {nom_produit}, Prix unitaire: {prix_unitaire} €, Quantité en stock: {quantite_stock}")
 
 quantite_achetee = int(input("Combien d'unités souhaitez-vous acheter ? "))
-quantite_stock += quantite_achetee
+quantite_stock -= quantite_achetee
 
 prix_unitaire *= 1.1
 
