@@ -1,7 +1,7 @@
 montant_investissement = 10000
-taux_rendement_annuel = 10 
+taux_rendement_annuel = 0.1
 
-gain_annuel = taux_rendement_annuel * montant_investissement / 100
+gain_annuel = taux_rendement_annuel * montant_investissement
 print("Gain annuel initial pour la vente d'ensembles Nike : ", gain_annuel)
 
 montant_investissement += 5000
