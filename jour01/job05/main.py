@@ -20,9 +20,17 @@ import random
 def melanger_et_afficher_a_lenvers():
     alphabet = list("abcdefghijklmnopqrstuvwxyz")
     random.shuffle(alphabet)
-    alphabet_inverse = sorted(alphabet, reverse=True)
+    
+    def trier_de_z_a_a(une_liste):
+        for i in range(len(une_liste) - 1):
+            for j in range(i + 1, len(une_liste)):
+                if ord(une_liste[i]) < ord(une_liste[j]):
+                    une_liste[i], une_liste[j] = une_liste[j], une_liste[i]
+        return une_liste
+    
+    alphabet_trie_inverse = trier_de_z_a_a(alphabet)
     
     print("Alphabet mélangé:", " ".join(alphabet))
-    print("Alphabet trié de z à a:", " ".join(alphabet_inverse))
+    print("Alphabet trié de z à a:", " ".join(alphabet_trie_inverse))
 
 melanger_et_afficher_a_lenvers()
