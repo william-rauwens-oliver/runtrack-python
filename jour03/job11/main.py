@@ -15,11 +15,11 @@ def time_to_text(minutes):
     elif minutes_restantes == 0:
         print("{} heures.".format(heures))
     else:
-        print("{} heures et {} minute{}.".format(heures, minutes_restantes, 's' if minutes_restantes != 1 else ""))
+        print("{} heures et {} minute{}.".format(heures, minutes_restantes, 's' if minutes_restantes != 1 else "")) # "!" sert à ajouter un s au mots "minute" en vérifiant si il est différent de 1.
 
-time_to_text(120)
-time_to_text(75)
+time_to_text(160)
+time_to_text(85)
 time_to_text(45)
-time_to_text(60)
+time_to_text(30)
 time_to_text(0)
-time_to_text(-30)
+time_to_text(-20)
