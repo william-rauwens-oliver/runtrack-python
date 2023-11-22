@@ -1,4 +1,4 @@
-def affiche_type_developpeur(langage):
+def type_developpeur(langage):
     if langage == "JavaScript":
         print("tu es un développeur web")
     elif langage == "Python":
@@ -11,8 +11,8 @@ def affiche_type_developpeur(langage):
         print("un jour, je serai le meilleur développeur...")
 
     
-affiche_type_developpeur("JavaScript")
-affiche_type_developpeur("Python")
-affiche_type_developpeur("Java")
-affiche_type_developpeur("reactjs")
-affiche_type_developpeur("C++") # c++ ajouté comme exemple uniquement pour tester lorsque le langage n'est égal à aucune des conditions précédentes, pour montrer comment "else" agit.
+type_developpeur("JavaScript")
+type_developpeur("Python")
+type_developpeur("Java")
+type_developpeur("reactjs")
+type_developpeur("C++") # c++ ajouté comme exemple uniquement pour tester lorsque le langage n'est égal à aucune des conditions précédentes, pour montrer comment "else" agit.

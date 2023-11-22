@@ -1,6 +1,6 @@
 def moyenne(note1, note2, note3):
     return round((note1 + note2 + note3) / 3)
-def evaluer_moyenne(moyenne_etudiant):
+def moyenne_evaluer(moyenne_etudiant):
     if 15 <= moyenne_etudiant <= 20:
         return "Très bon élève"
     elif 11 <= moyenne_etudiant <= 14:
@@ -20,5 +20,5 @@ moyenne_etudiant = moyenne(note1, note2, note3)
 
 print("La moyenne de l'étudiant est :", moyenne_etudiant)
 
-commentaire = evaluer_moyenne(moyenne_etudiant)
+commentaire = moyenne_evaluer(moyenne_etudiant)
 print(commentaire)
