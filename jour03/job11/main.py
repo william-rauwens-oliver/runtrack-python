@@ -19,7 +19,6 @@ def time_to_text(minutes):
 
 time_to_text(160)
 time_to_text(85)
-time_to_text(45)
-time_to_text(30)
+time_to_text(35)
 time_to_text(0)
 time_to_text(-20)
