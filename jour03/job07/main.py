@@ -15,5 +15,4 @@ affiche_type_developpeur("JavaScript")
 affiche_type_developpeur("Python")
 affiche_type_developpeur("Java")
 affiche_type_developpeur("reactjs")
-affiche_type_developpeur("C++")
-# c++ ajouté comme exemple uniquement pour tester lorsque le langage n'est égal à aucune des conditions précédentes, pour montrer comment "else" agit.
+affiche_type_developpeur("C++") # c++ ajouté comme exemple uniquement pour tester lorsque le langage n'est égal à aucune des conditions précédentes, pour montrer comment "else" agit.
