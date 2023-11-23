@@ -10,5 +10,5 @@ def my_long_word(longueur_min, phrase):
             phrase_de_mots.append(mot)
     return " ".join(phrase_de_mots)
 
-resultat = my_long_word(3, "La peur est le chemin vers le côté obscur la peur mène à la colère la colère mène à la haine la haine mène à la souffrance")
+resultat = my_long_word(3, "La peur est le chemin vers le côté obscur la peur mène à la colère la colère mène à la haine la haine mène à la souffrance") # j'ai repris la meme phrase que l'exemple, j'avais pas d'idée
 print("Output :", resultat)
