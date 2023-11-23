@@ -22,3 +22,15 @@ time_to_text(85)
 time_to_text(35)
 time_to_text(0)
 time_to_text(-20)
+
+# version très simple
+
+def time_to_text(number: int):
+    hour = int(number / 60)
+    minutes = number % 60
+    print(f"{hour} heures and {minutes} minutes")
+
+time_to_text(120)
+time_to_text(45)
+time_to_text(15)
+time_to_text(0)
