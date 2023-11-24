@@ -1,6 +1,5 @@
 def cesar(message, decalage):
     resultat = ""
-
     for lettre in message:
         if lettre.isalpha():
             majuscule = lettre.isupper()
