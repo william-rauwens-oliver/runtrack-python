@@ -12,4 +12,4 @@ def my_sort(liste):
 ma_liste = [64, 34, 25, 12, 22, 11, 90]
 resultat, coups = my_sort(ma_liste)
 print("Liste triée:", resultat)
-print("Nombre total de coups nécessaires:", coups)
+print("Nombre total de coups nécessaires pour trier la liste :", coups)
