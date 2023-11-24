@@ -1,7 +1,7 @@
-def tapis(taille):
-    for i in range(taille + 1):
-        for j in range(taille + 1):
-            if i + j == taille:
+def tapis(n):
+    for i in range(n + 1):
+        for j in range(n + 1):
+            if i + j == n:
                 print(" ", end="")
             else:
                 print("#", end="")

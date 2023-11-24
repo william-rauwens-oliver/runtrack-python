@@ -1,7 +1,7 @@
 def arrondir_notes(notes):
-    return [note if note < 40 else ((note + 4) // 5) * 5 for note in notes]
+    return [note if note < 38 else 40 if note == 38 else (note // 5 + 1) * 5 if (note // 5 + 1) * 5 - note < 3 else note for note in notes]
 
-# Exemple d'utilisation :
-notes = [83, 42, 78, 39, 91]
-notes_arrondies = arrondir_notes(notes)
-print(notes_arrondies)
+notes_eleves = [81, 75, 43, 37, 94]
+notes_arrondies = arrondir_notes(notes_eleves)
+print("Notes des élèves avant arrondi :", notes_eleves)
+print("Notes arrondies :", notes_arrondies)

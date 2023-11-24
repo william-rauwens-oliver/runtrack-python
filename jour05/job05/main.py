@@ -2,18 +2,15 @@ def cesar(message, decalage):
     resultat = ""
     for lettre in message:
         if lettre.isalpha():
-            majuscule = lettre.isupper()
-            lettre = lettre.upper()
-            decalee = chr((ord(lettre) - ord('A') + decalage) % 26 + ord('A'))
-            if not majuscule:
-                decalee = decalee.lower()
-            resultat += decalee
+            est_majuscule = lettre.isupper()
+            letre_mal_rangé = chr((ord(lettre) - ord('A' if est_majuscule else 'a') + decalage) % 26 + ord('A')) # j'ai fait en sorte que les majuscules marchent
+            resultat += letre_mal_rangé.lower() if not est_majuscule else letre_mal_rangé
         else:
             resultat += lettre
     return resultat
 
-message_original = "Jules César"
+normal_message = "Jules César"
 decalage = 3
-message_decale = cesar(message_original, decalage)
-print(f"message original : {message_original}")
-print(f"message décalé : {message_decale}")
+message_decale = cesar(normal_message, decalage)
+print(f"Message original: {normal_message}")
+print(f"Message décalé: {message_decale}")
